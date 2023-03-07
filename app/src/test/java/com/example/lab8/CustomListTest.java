@@ -65,5 +65,20 @@ public class CustomListTest {
 
     }
 
+    /**
+     * check function count
+     */
+    @Test
+    public void countCityTest() {
+        list = MockCityList();
+        int listSize = list.getCount();
+        City city = new City("Estevan", "SK");
+        list.addCity(city);
+        assertEquals(list.getCount(), listSize+1);
+        list.delteCity(city);
+        assertEquals(list.getCount(), listSize);
+
+    }
+
 
 }
