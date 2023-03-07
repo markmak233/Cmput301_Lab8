@@ -48,7 +48,6 @@ public class CustomListTest {
         City city = new City("Estevan", "SK");
         list.addCity(city);
         assertEquals(list.hasCity(city), true);
-
     }
 
     /**
@@ -65,5 +64,6 @@ public class CustomListTest {
         assertEquals(list.hasCity(city), false);
 
     }
+
 
 }

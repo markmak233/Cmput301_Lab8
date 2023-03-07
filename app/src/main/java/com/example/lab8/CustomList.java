@@ -71,6 +71,6 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void delteCity(City city){
-
+        cities.remove(city);
     }
 }
